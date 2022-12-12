@@ -11,13 +11,21 @@ import { ApplyOnlineComponent } from './landing/components/apply-online/apply-on
 import { ImgContainerComponent } from './landing/components/img-container/img-container.component';
 import { LoginPageComponent } from './landing/components/login-page/login-page.component';
 
-const components = [LandingComponent];
+const components = [
+  LandingComponent,
+  NewsBlogSectionComponent,
+  OtherInfoComponent,
+  FaqComponent,
+  ApplyOnlineComponent,
+  ImgContainerComponent,
+  LoginPageComponent,
+];
 
 const modules = [PublicRoutingModule, SharedModule];
 
 @NgModule({
-  declarations: [LandingComponent, NewsBlogSectionComponent, OtherInfoComponent, FaqComponent, ApplyOnlineComponent, ImgContainerComponent, LoginPageComponent],
-  imports: [...components, ...modules],
+  declarations: [...components],
+  imports: [...modules],
   exports: [...components, ...modules],
 })
 export class PublicModule {}
