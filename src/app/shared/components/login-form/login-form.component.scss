@@ -1,0 +1,56 @@
+.row {
+  border-radius: 1rem;
+}
+
+.btn {
+  background-color: #0093dc;
+  color: white;
+}
+
+.img-box {
+  background-color: #42a7c3;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+.form-label {
+  color: #053fae;
+  font-weight: 700;
+}
+
+.input::placeholder::placeholder {
+  color: #053fae;
+}
+
+//utility classes
+
+input::placeholder {
+  color: grey;
+  font-weight: 400;
+}
+.title {
+  color: #053fae;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.error-msg {
+  color: red;
+  font-size: smaller;
+}

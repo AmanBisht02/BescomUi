@@ -6,8 +6,13 @@ import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
-const reUseComponents: any = [HeaderComponent, FooterComponent];
+const reUseComponents: any = [
+  HeaderComponent,
+  FooterComponent,
+  LoginFormComponent,
+];
 
 const reUseModules: any = [
   CommonModule,
@@ -21,6 +26,6 @@ const reUseModules: any = [
 @NgModule({
   declarations: [...reUseComponents],
   imports: [...reUseModules],
-  exports: [...reUseModules, ...reUseComponents],
+  exports: [...reUseComponents, ...reUseModules],
 })
 export class SharedModule {}
