@@ -14,7 +14,28 @@
       style="float: right; padding-top: 0.8rem"
       role="search"
     >
-      <button class="btn" routerLink="/login-page" type="submit">LOGIN</button>
+      <div class="btn-group">
+        <button
+          class="btn btn-secondary btn-lg dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img
+            src="../../../../assets/landing-page-icons/svg/lock.svg"
+            alt="lockpad"
+          />
+          Login
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Customer Login</a>
+          <a class="dropdown-item" href="#">SDO Login</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Dashboard</a>
+        </div>
+      </div>
+      <!-- <button class="btn" routerLink="/login-page" type="submit">LOGIN</button> -->
     </form>
   </div>
 </div>

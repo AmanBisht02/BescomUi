@@ -3,12 +3,17 @@
 
   a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 
     &:hover {
-      color: #0093dc;
+      color: black;
     }
   }
+}
+
+.btn-box {
+  display: flex;
+  justify-content: space-around;
 }
 
 .btn {
@@ -74,5 +79,5 @@ input::placeholder {
 
 .error-msg {
   color: red;
-  font-size: smaller;
+  font-size: 14px;
 }

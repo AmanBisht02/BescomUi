@@ -10,6 +10,7 @@ import { FaqComponent } from './landing/components/faq/faq.component';
 import { ApplyOnlineComponent } from './landing/components/apply-online/apply-online.component';
 import { ImgContainerComponent } from './landing/components/img-container/img-container.component';
 import { LoginPageComponent } from './landing/components/login-page/login-page.component';
+import { RegisPageComponent } from './landing/components/regis-page/regis-page.component';
 
 const components = [
   LandingComponent,
@@ -19,6 +20,7 @@ const components = [
   ApplyOnlineComponent,
   ImgContainerComponent,
   LoginPageComponent,
+  RegisPageComponent,
 ];
 
 const modules = [PublicRoutingModule, SharedModule];
